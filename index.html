@@ -1,0 +1,346 @@
+<div class="character_sheet-container container">
+            <div class="basic_info-container block">
+                <h1 class="title">Basic Information</h1>
+                <div class="row input-section">
+                    <span class="info-tag" data-i18n="name">Name:</span>
+                    <input class="text" type="text" name="attr_npc_name" placeholder="Name">
+                    <span class="info-tag" data-i18n="player_name">Player Name:</span>
+                    <input class="text" type="text" name="attr_npc_animal_player-name" placeholder="Player Name">
+                </div>
+                <div class="row input-section">
+                    <!-- <span class="info-tag" data-i18n="player_name">Player Name:</span>
+                    <input class="text" type="text" name="attr_npc_animal_player-name" placeholder="Player Name"> -->
+                </div>
+                <div class="row input-section">
+                    <span class="info-tag" data-i18n="roll">Roll:</span>
+                    <input class="text" type="text" name="attr_npc_roll" placeholder="Roll">
+                </div>
+                <div class="row input-section">
+                    <span class="info-tag" data-i18n="age">Age:</span>
+                    <input class="num text" type="text" name="attr_npc_age" placeholder="0">
+                    <span class="info-tag" data-i18n="pronouns">Pronouns:</span>
+                    <input class="text" type="text" name="attr_npc_pronouns" placeholder="pronouns">
+                </div>
+                <div class="row input-section">
+                    <span class="info-tag" data-i18n="decription">Decription:</span>
+                    <input class="textarea text" type="textarea" name="attr_npc_decription" placeholder="text">
+                </div>
+        </div>
+        <div class="characteristics_section-container block">
+            <h1 class="title">Characteristics</h1>
+         
+            <div class="boxes">
+                <div class="box">
+                <input type="text" class="vitals-box" name="attr_characteristics_materials" accept="Material" placeholder="" data-i18n-place="Fortitude">
+                   <span class="info-tag" data-i18n="characteristic-component-verbal">Fortitude</span>
+                </div>
+                <div class="box">
+                <input type="text" class="vitals-box" name="attr_characteristics_materials" accept="Material" placeholder="" data-i18n-place="Luck">
+                   <span class="info-tag" data-i18n="characteristic-component-verbal">Luck</span>
+                </div>
+                <div class="box">
+                <input type="text" class="vitals-box" name="attr_characteristics_materials" accept="Material" placeholder="" data-i18n-place="Agility">
+                   <span class="info-tag" data-i18n="characteristic-component-verbal">Agility</span>
+                   </div>
+            </div>
+                   <div class="checkbox-grid">
+                       <div class="checkbox-block">
+                           <div class="checkbox-row_1">
+                                        <input type="checkbox" class="checkmark" name="attr_characteristics_v" value="{{v=1}}" checked="checked">
+                  <span class="info-tag" data-i18n="characteristic-component-verbal">Appraisal</span>
+                           </div>
+                           <div class="checkbox-row_1">
+                  <input type="checkbox" class="checkmark" name="attr_characteristics_m" value="{{m=1}}" checked="checked">
+                  <span class="info-tag" data-i18n="characteristic-component-material">Investigation</span>
+                           </div>
+                           <div class="checkbox-row_1">
+                  <input type="checkbox" class="checkmark" name="attr_characteristics_m" value="{{m=1}}" checked="checked">
+                  <span class="info-tag" data-i18n="characteristic-component-material">Operations</span>
+                           </div>
+                           <div class="checkbox-row_1">
+                  <input type="checkbox" class="checkmark" name="attr_characteristics_m" value="{{m=1}}" checked="checked">
+                  <span class="info-tag" data-i18n="characteristic-component-material">Perception</span>
+                           </div>
+                           <div class="checkbox-row_1">
+                  <input type="checkbox" class="checkmark" name="attr_characteristics_m" value="{{m=1}}" checked="checked">
+                  <span class="info-tag" data-i18n="characteristic-component-material">Studies</span>
+                            </div>
+                       </div>
+
+                       <div class="checkbox-block_2">
+                        <div class="checkbox-row_1">
+                        <input type="checkbox" class="checkmark" name="attr_characteristics_s" value="{{s=1}}" checked="checked">
+                        <span class="info-tag" data-i18n="characteristic-component-somatic">Charisma</span>
+                        </div>
+                        <div class="checkbox-row_1">
+                        <input type="checkbox" class="checkmark" name="attr_characteristics_m" value="{{m=1}}" checked="checked">
+                        <span class="info-tag" data-i18n="characteristic-component-material">Medicine</span>
+                        </div>
+                        <div class="checkbox-row_1">
+                        <input type="checkbox" class="checkmark" name="attr_characteristics_m" value="{{m=1}}" checked="checked">
+                        <span class="info-tag" data-i18n="characteristic-component-material">Parapsychology</span>
+                        </div>
+                        <div class="checkbox-row_1">
+                        <input type="checkbox" class="checkmark" name="attr_characteristics_m" value="{{m=1}}" checked="checked">
+                        <span class="info-tag" data-i18n="characteristic-component-material">Physicality</span>
+                        </div>
+                        <div class="checkbox-row_1">
+                        <input type="checkbox" class="checkmark" name="attr_characteristics_m" value="{{m=1}}" checked="checked">
+                        <span class="info-tag" data-i18n="characteristic-component-material">Weapons</span>
+                        </div>
+                             </div>
+                       </div>
+
+
+
+
+                  
+
+
+
+
+        </div>
+        <div class="vitals_section-container block">
+            <h1 class="title">Vitals</h1>
+            <div class="input-box">
+            <input type="text" class="vitals-box" name="attr_vitals_materials" accept="Material" placeholder="" data-i18n-place="Sanity">
+            <span class="info-tag" data-i18n="characteristic-component-verbal">Sanity</span>
+         <input type="text" class="vitals-box"  name="attr_vitals_materials" accept="Material" placeholder="" data-i18n-place="Health">
+            <span class="info-tag" data-i18n="characteristic-component-verbal">Health</span>
+            </div>
+            <div class="body_vitalhit-container">
+                <div class="skeleton">
+                <div class="head">
+                </div>
+  
+                    <div class="body">
+                        <div class="left-arm"></div>
+                        <div class="stomach"></div>
+                        <div class="right-arm"></div>
+                    </div>
+                <div class="legs">
+                    <div class="left-leg"></div>
+                    <div class="right-leg"></div>
+                </div>
+            </div>
+        </div>
+   
+    </div>
+    <div class="inventory_section-container block">
+        <h1 class="title">Inventory</h1>
+        <textarea class="inventory_text-container" name="inventory">...</textarea>
+
+    </div>
+    </div>
+    <div class="notes_section-container block">
+        <h1 class="title">Notes</h1>
+        <textarea class="notes_text-container" name="inventory">...</textarea>
+
+    </div>
+</div>
+
+<style>
+    .character_sheet-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        background-color: #ededed;
+    }
+
+    .title {
+        background-color: #bcadd1;
+        padding: 1em;
+        font-family: Verdana;
+        font-size: 1.5em;
+        border-bottom: .1em solid #340082;
+        text-align: center;
+        margin: 0;
+    }
+
+    .info-tag {
+        font-family: Verdana;
+        font-size: 1.5em;
+    }
+
+    .text {
+        padding: .6em;
+        width: 20%;
+        border: .2em solid #340082;
+    }
+    
+    .textarea {
+        padding: .6em;
+        width: 50%;
+    }
+
+    .checkbox-grid {
+        display: flex;
+        padding: 1em;
+        justify-content: center;
+    }
+
+    .checkbox-block {
+        display: grid;
+        padding: .2em;
+    }
+
+    .checkbox-row_1 {
+        display: inline-block;
+        padding: .5em;
+    }
+
+    .checkbox-block_2 {
+        display: grid;
+        grid-template-columns: 2fr;;
+    }
+
+    .checkmark {
+        width: 25px;
+        height: 25px;
+    }
+
+    .block {
+        border: .2em solid #340082;
+        margin: .1em;
+    }
+
+    .basic_info-container {
+
+    }
+
+    .input-section {
+        padding: 1em;
+    }
+
+    .characteristics_section-container {
+
+    }
+
+    .boxes {
+        display: flex;
+        grid-template-columns: 1fr 1fr 1f;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        padding: 1em;
+    }
+
+    .box {
+        display: inline-block;
+        padding: .5em;
+    }
+
+    .vitals_section-container {
+        /* background-color: aqua; */
+        /* padding: 2em; */
+    }
+
+    .input-box {
+        display: block;
+        text-align: center;
+        grid-gap: 50px;
+        padding: 1em;
+        column-gap: 20px;
+    }
+    
+    .vitals-box {
+        width: 75px;
+        height: 75px;
+        border: .2em solid #340082;
+        justify-content: space-between;
+    }
+
+    .body_vitalhit-container {
+        /* display: block; */
+    }
+
+    .skeleton {
+        display: grid;
+    }
+
+    .head {
+        width: 100px;
+        height: 100px;
+        border: .2em solid #100c08;
+        border-radius: 50%;
+        margin: 1em auto;
+    }
+
+    .body {
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+        width: 50%;
+    }
+
+    .left-arm {
+        width: 150px;
+        height: 50px;
+        border: .2em solid #100c08;
+        transform: rotate(-20deg);
+        margin-top: 1em;
+    }
+
+    .stomach {
+        width: 150px;
+        height: 150px;
+        border: .2em solid #100c08;
+        display: inline-block;
+        margin: -.25em .5em;
+    }
+
+    .right-arm {
+        width: 150px;
+        height: 50px;
+        border: .2em solid #100c08;
+        transform: rotate(20deg);
+        margin-top: 1em;
+    }
+
+    .legs {
+        display: inline-flex;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .left-leg {
+        margin: .5em 1em;
+        width: 50px;
+        height: 150px;
+        border: .2em solid #100c08;
+        transform: rotate(10deg);
+    }
+
+    .right-leg {
+        margin: .5em 1em;
+        width: 50px;
+        height: 150px;
+        border: .2em solid #100c08;
+        transform: rotate(-10deg);
+    }
+
+    .inventory_section-container {
+        /* background-color: magenta; */
+        /* padding: 1em; */
+    }
+
+    .inventory_text-container {
+        width: 75%;
+        /* width: 600px; */
+        height: 350px;
+        margin: 10%;
+        border: .2em solid #340082;
+    }
+
+    .notes_section-container {
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .notes_text-container {
+        width: 800px;
+        height: 350px;
+        margin: 1em;
+        border: .2em solid #340082;
+    }
+</style>
