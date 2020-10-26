@@ -1,0 +1,546 @@
+{
+    "html": "index.html",
+    "css": "style.css",
+    "author": "Mark allen Jr",
+    "roll20userid": "Markish"
+}
+{
+    "link": {
+      "rel": "stylesheet",
+      "href": "style.css"
+    },
+    "div": {
+      "class": "sheet-container",
+      "div": [
+        {
+          "class": "sheet-character_sheet-container container",
+          "div": [
+            {
+              "class": "sheet-basic_info-container block",
+              "h1": {
+                "class": "sheet-title",
+                "text": "Basic Information"
+              },
+              "div": [
+                {
+                  "class": "row sheet-input-section",
+                  "span": [
+                    {
+                      "class": "sheet-info-tag",
+                      "data-i18n": "name",
+                      "text": "Name:"
+                    },
+                    {
+                      "class": "sheet-info-tag",
+                      "data-i18n": "player_name",
+                      "text": "Player Name:"
+                    }
+                  ],
+                  "input": [
+                    {
+                      "class": "sheet-text",
+                      "id": "font",
+                      "type": "text",
+                      "name": "attr_npc_name",
+                      "placeholder": "Name"
+                    },
+                    {
+                      "class": "sheet-text",
+                      "id": "font",
+                      "type": "text",
+                      "name": "attr_npc_player-name",
+                      "placeholder": "Player Name"
+                    }
+                  ]
+                },
+                {
+                  "class": "row sheet-input-section",
+                  "span": {
+                    "class": "sheet-info-tag",
+                    "data-i18n": "roll",
+                    "text": "Roll:"
+                  },
+                  "input": {
+                    "class": "sheet-text",
+                    "id": "font",
+                    "type": "text",
+                    "name": "attr_npc_roll",
+                    "placeholder": "Roll"
+                  }
+                },
+                {
+                  "class": "row sheet-input-section",
+                  "span": [
+                    {
+                      "class": "sheet-info-tag",
+                      "data-i18n": "age",
+                      "text": "Age:"
+                    },
+                    {
+                      "class": "sheet-info-tag",
+                      "data-i18n": "pronouns",
+                      "text": "Pronouns:"
+                    }
+                  ],
+                  "input": [
+                    {
+                      "class": "num sheet-text",
+                      "id": "font",
+                      "type": "text",
+                      "name": "attr_npc_age",
+                      "placeholder": "0"
+                    },
+                    {
+                      "class": "sheet-text",
+                      "id": "font",
+                      "type": "text",
+                      "name": "attr_npc_pronouns",
+                      "placeholder": "pronouns"
+                    }
+                  ]
+                },
+                {
+                  "class": "row sheet-input-section",
+                  "span": {
+                    "class": "sheet-info-tag",
+                    "data-i18n": "decription",
+                    "text": "Decription:"
+                  },
+                  "textarea": {
+                    "id": "font_2",
+                    "cols": "75",
+                    "rows": "5",
+                    "style": " border: .2em solid #340082;",
+                    "name": "description",
+                    "text": "..."
+                  }
+                }
+              ]
+            },
+            {
+              "class": "sheet-characteristics_section-container block",
+              "h1": {
+                "class": "sheet-title",
+                "text": "Characteristics"
+              },
+              "div": [
+                {
+                  "class": "sheet-boxes",
+                  "div": [
+                    {
+                      "class": "sheet-box",
+                      "input": {
+                        "type": "text",
+                        "id": "font",
+                        "class": "sheet-vitals-box",
+                        "name": "attr_characteristics_Fortitude",
+                        "accept": "Fortitude",
+                        "placeholder": "",
+                        "data-i18n-place": "Fortitude"
+                      },
+                      "span": {
+                        "class": "sheet-info-tag",
+                        "data-i18n": "characteristic-component-verbal",
+                        "text": "Fortitude"
+                      }
+                    },
+                    {
+                      "class": "sheet-box",
+                      "input": {
+                        "type": "text",
+                        "id": "font",
+                        "class": "sheet-vitals-box",
+                        "name": "attr_characteristics_Luck",
+                        "accept": "Luck",
+                        "placeholder": "",
+                        "data-i18n-place": "Luck"
+                      },
+                      "span": {
+                        "class": "sheet-info-tag",
+                        "data-i18n": "characteristic-component-verbal",
+                        "text": "Luck"
+                      }
+                    },
+                    {
+                      "class": "sheet-box",
+                      "input": {
+                        "type": "text",
+                        "id": "font",
+                        "class": "sheet-vitals-box",
+                        "name": "attr_characteristics_Agility",
+                        "accept": "Agility",
+                        "placeholder": "",
+                        "data-i18n-place": "Agility"
+                      },
+                      "span": {
+                        "class": "sheet-info-tag",
+                        "data-i18n": "characteristic-component-verbal",
+                        "text": "Agility"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "class": "sheet-checkbox-grid",
+                  "div": [
+                    {
+                      "class": "sheet-checkbox-block",
+                      "div": [
+                        {
+                          "class": "sheet-checkbox-row_1",
+                          "input": [
+                            {
+                              "type": "checkbox",
+                              "class": "sheet-checkmark",
+                              "name": "attr_characteristics_a",
+                              "value": "{{a=1}}"
+                            },
+                            {
+                              "type": "num",
+                              "class": "sheet-num_line"
+                            }
+                          ],
+                          "span": {
+                            "class": "sheet-info-tag",
+                            "data-i18n": "characteristic-component-appraisal",
+                            "text": "Appraisal"
+                          }
+                        },
+                        {
+                          "class": "sheet-checkbox-row_1",
+                          "input": [
+                            {
+                              "type": "checkbox",
+                              "class": "sheet-checkmark",
+                              "name": "attr_characteristics_i",
+                              "value": "{{i=1}}"
+                            },
+                            {
+                              "type": "num",
+                              "class": "sheet-num_line"
+                            }
+                          ],
+                          "span": {
+                            "class": "sheet-info-tag",
+                            "data-i18n": "characteristic-component-investigation",
+                            "text": "Investigation"
+                          }
+                        },
+                        {
+                          "class": "sheet-checkbox-row_1",
+                          "input": [
+                            {
+                              "type": "checkbox",
+                              "class": "sheet-checkmark",
+                              "name": "attr_characteristics_o",
+                              "value": "{{o=1}}"
+                            },
+                            {
+                              "type": "num",
+                              "class": "sheet-num_line"
+                            }
+                          ],
+                          "span": {
+                            "class": "sheet-info-tag",
+                            "data-i18n": "characteristic-component-operations",
+                            "text": "Operations"
+                          }
+                        },
+                        {
+                          "class": "sheet-checkbox-row_1",
+                          "input": [
+                            {
+                              "type": "checkbox",
+                              "class": "sheet-checkmark",
+                              "name": "attr_characteristics_p",
+                              "value": "{{p=1}}"
+                            },
+                            {
+                              "type": "num",
+                              "class": "sheet-num_line"
+                            }
+                          ],
+                          "span": {
+                            "class": "sheet-info-tag",
+                            "data-i18n": "characteristic-component-perception",
+                            "text": "Perception"
+                          }
+                        },
+                        {
+                          "class": "sheet-checkbox-row_1",
+                          "input": [
+                            {
+                              "type": "checkbox",
+                              "class": "sheet-checkmark",
+                              "name": "attr_characteristics_ed",
+                              "value": "{{ed=1}}"
+                            },
+                            {
+                              "type": "num",
+                              "class": "sheet-num_line"
+                            }
+                          ],
+                          "span": {
+                            "class": "sheet-info-tag",
+                            "data-i18n": "characteristic-component-studies",
+                            "text": "Studies"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "class": "sheet-checkbox-block_2",
+                      "div": [
+                        {
+                          "class": "sheet-checkbox-row_1",
+                          "input": [
+                            {
+                              "type": "checkbox",
+                              "class": "sheet-checkmark",
+                              "name": "attr_characteristics_c",
+                              "value": "{{c=1}}"
+                            },
+                            {
+                              "type": "num",
+                              "class": "sheet-num_line"
+                            }
+                          ],
+                          "span": {
+                            "class": "sheet-info-tag",
+                            "data-i18n": "characteristic-component-charisma",
+                            "text": "Charisma"
+                          }
+                        },
+                        {
+                          "class": "sheet-checkbox-row_1",
+                          "input": [
+                            {
+                              "type": "checkbox",
+                              "class": "sheet-checkmark",
+                              "name": "attr_characteristics_b",
+                              "value": "{{b=1}}"
+                            },
+                            {
+                              "type": "num",
+                              "class": "sheet-num_line"
+                            }
+                          ],
+                          "span": {
+                            "class": "sheet-info-tag",
+                            "data-i18n": "characteristic-component-medicine",
+                            "text": "Medicine"
+                          }
+                        },
+                        {
+                          "class": "sheet-checkbox-row_1",
+                          "input": [
+                            {
+                              "type": "checkbox",
+                              "class": "sheet-checkmark",
+                              "name": "attr_characteristics_d",
+                              "value": "{{d=1}}"
+                            },
+                            {
+                              "type": "num",
+                              "class": "sheet-num_line"
+                            }
+                          ],
+                          "span": {
+                            "class": "sheet-info-tag",
+                            "data-i18n": "characteristic-component-parapsychology",
+                            "text": "Parapsychology"
+                          }
+                        },
+                        {
+                          "class": "sheet-checkbox-row_1",
+                          "input": [
+                            {
+                              "type": "checkbox",
+                              "class": "sheet-checkmark",
+                              "name": "attr_characteristics_y",
+                              "value": "{{y=1}}"
+                            },
+                            {
+                              "type": "num",
+                              "class": "sheet-num_line"
+                            }
+                          ],
+                          "span": {
+                            "class": "sheet-info-tag",
+                            "data-i18n": "characteristic-component-physicality",
+                            "text": "Physicality"
+                          }
+                        },
+                        {
+                          "class": "sheet-checkbox-row_1",
+                          "input": [
+                            {
+                              "type": "checkbox",
+                              "class": "sheet-checkmark",
+                              "name": "attr_characteristics_w",
+                              "value": "{{w=1}}"
+                            },
+                            {
+                              "type": "num",
+                              "class": "sheet-num_line"
+                            }
+                          ],
+                          "span": {
+                            "class": "sheet-info-tag",
+                            "data-i18n": "characteristic-component-weapons",
+                            "text": "Weapons"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "class": "sheet-vitals_section-container block",
+              "h1": {
+                "class": "sheet-title",
+                "text": "Vitals"
+              },
+              "div": [
+                {
+                  "class": "sheet-input-box",
+                  "input": [
+                    {
+                      "type": "text",
+                      "id": "font",
+                      "class": "sheet-vitals-box",
+                      "name": "attr_vitals_sanity",
+                      "accept": "Sanity",
+                      "placeholder": "",
+                      "data-i18n-place": "Sanity"
+                    },
+                    {
+                      "type": "text",
+                      "id": "font",
+                      "class": "sheet-vitals-box",
+                      "name": "attr_vitals_health",
+                      "accept": "Health",
+                      "placeholder": "",
+                      "data-i18n-place": "Health"
+                    }
+                  ],
+                  "span": [
+                    {
+                      "class": "sheet-info-tag",
+                      "data-i18n": "characteristic-component-verbal",
+                      "text": "Sanity"
+                    },
+                    {
+                      "class": "sheet-info-tag",
+                      "data-i18n": "characteristic-component-verbal",
+                      "text": "Health"
+                    }
+                  ]
+                },
+                {
+                  "class": "sheet-body_vitalhit-container",
+                  "div": {
+                    "class": "sheet-skeleton",
+                    "div": [
+                      {
+                        "class": "sheet-head",
+                        "input": {
+                          "type": "checkbox",
+                          "class": "sheet-checkmark",
+                          "name": "attr_characteristics_s",
+                          "value": "{{s=1}}"
+                        }
+                      },
+                      {
+                        "class": "sheet-body",
+                        "div": [
+                          {
+                            "class": "sheet-left-arm",
+                            "input": {
+                              "type": "checkbox",
+                              "class": "sheet-checkmark",
+                              "name": "attr_characteristics_s",
+                              "value": "{{s=1}}"
+                            }
+                          },
+                          {
+                            "class": "sheet-stomach",
+                            "input": {
+                              "type": "checkbox",
+                              "class": "sheet-checkmark",
+                              "name": "attr_characteristics_s",
+                              "value": "{{s=1}}"
+                            }
+                          },
+                          {
+                            "class": "sheet-right-arm",
+                            "input": {
+                              "type": "checkbox",
+                              "class": "sheet-checkmark",
+                              "name": "attr_characteristics_s",
+                              "value": "{{s=1}}"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "class": "sheet-legs",
+                        "div": [
+                          {
+                            "class": "sheet-left-leg",
+                            "input": {
+                              "type": "checkbox",
+                              "class": "sheet-checkmark",
+                              "name": "attr_characteristics_s",
+                              "value": "{{s=1}}"
+                            }
+                          },
+                          {
+                            "class": "sheet-right-leg",
+                            "input": {
+                              "type": "checkbox",
+                              "class": "sheet-checkmark",
+                              "name": "attr_characteristics_s",
+                              "value": "{{s=1}}"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "class": "sheet-inventory_section-container block",
+              "h1": {
+                "class": "sheet-title",
+                "text": "Inventory"
+              },
+              "textarea": {
+                "id": "font_2",
+                "class": "sheet-inventory_text-container",
+                "name": "inventory",
+                "text": "..."
+              }
+            }
+          ]
+        },
+        {
+          "class": "sheet-notes_section-container block",
+          "h1": {
+            "class": "sheet-title",
+            "#text": "Notes"
+          },
+          "textarea": {
+            "id": "font_2",
+            "class": "sheet-notes_text-container",
+            "name": "Notes",
+            "text": "..."
+          }
+        }
+      ]
+    }
+  }
